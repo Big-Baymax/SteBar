@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="StepBar.css"/>
+		<script src="stepBar.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body style="background-color: #DFDFDF;">
+		<div class="conter">
+			<div id="newstepbar" class="stepBardiv"></div>
+			<div id="1" class="stepBarcon stepBar_1">1</div>
+			<div id="2" class="stepBarcon stepBar_2">2</div>
+			<div id="3" class="stepBarcon stepBar_3">3</div>
+			<div id="4" class="stepBarcon stepBar_4">4</div>
+			<div id="5" class="stepBarcon stepBar_5">5</div>
+		</div>
+		<div id="btn">
+			<input type="button" name="" id="btn" value="下一步" style="margin: 10px;font-size: 16px;padding: 10px;" />
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var id = stepbar.init({
+				box: $("#newstepbar"),
+				items: ['第一步', '第二步', '第二步', '第二步', '第二步'],
+				stepbarid: "stepBar", //stepBar
+				current: 1, //第几个被选中
+			});
+			console.log(stepbar.getoptions(id).current);
+			console.log(id);
+			console.log(stepbar.getoptions(id).current);
+			console.log(id);
+			var i = stepbar.getoptions(id).current;
+			$("#btn").click(function() {
+				if(i > 4) {
+					i = 1;
+				} else {
+					i++;
+				}
+				stepbar.setcurrent(0, i);//设置第几个被选中的
+			});
+		})
+	</script>
+
+</html>

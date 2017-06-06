@@ -1,0 +1,99 @@
+.conter {
+				width: 850px;
+				height: 700px;
+				position: absolute;
+				margin: auto;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+			}
+			.stepBarcon {
+				height: 600px;
+				width: 850px;
+				text-align: center;
+				vertical-align: middle;
+				display: table-cell;
+				font-size: 60px;
+				font-weight: 300;
+				margin: 1px;
+				background-color: white;
+			}
+			
+			.stepBardiv {
+				width: 851px;
+			}
+			
+			.stepBar li:last-child {
+				border-right: 1px solid #E4E6E9;
+				padding-right: 15px
+			}
+			
+			.stepBar {
+				width: 100%;
+				overflow: hidden;
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.stepBar .stepBar_li {
+				width: 20%;
+			}
+			/*选中li的背景和前景颜色样式*/
+			
+			.stepBar .stepBar_li_cur {
+				background-color: aquamarine;
+				color: #FFF;
+			}
+			/*三角形的背景颜色样式*/
+			
+			.stepBar .stepBar_li_cur+.stepBar_li:after {
+				border-color: transparent transparent transparent aquamarine
+			}
+			
+			.stepBar_li {
+				float: left;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				font-size: 12px;
+				color: #787878;
+				background-color: #FFF;
+				border-top: 1px solid #E4E6E9;
+				border-bottom: 1px solid #E4E6E9;
+				position: relative;
+				padding-left: 15px;
+				overflow: hidden;
+				box-sizing: border-box
+			}
+			
+			.stepBar_li:first-child {
+				border-left: 1px solid #E4E6E9;
+				padding-left: 0
+			}
+			
+			.stepBar_li:first-child:after,
+			.stepBar_li:first-child:before {
+				display: none
+			}
+			
+			.stepBar_li:after,
+			.stepBar_li:before {
+				position: absolute;
+				top: -2px;
+				content: '';
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 21px 0 21px 15px;
+			}
+			
+			.stepBar_li:before {
+				border-color: transparent transparent transparent #E4E6E9;
+				left: 1px;
+			}
+			
+			.stepBar_li:after {
+				border-color: transparent transparent transparent #FFF;
+				left: 0
+			}
