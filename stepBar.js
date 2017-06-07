@@ -1,10 +1,10 @@
-//  stepBarBox: options.box, //显示的容器
-//	items: options.items, //显示的内容['第一步', '第二步', '第二步']
-//	color: options.color, //显示的背景颜色
-//	fontColor: options.fontColor, //显示的字体颜色
-//	selectedColor: options.selectedColor,//焦点显示的背景颜色
-//	selectedFontColor: options.selectedFontColor,//焦点显示的字体颜色
-//	current: options.current, //第几个被选中
+ // stepBarBox: options.box, //显示的容器
+	// items: options.items, //显示的内容['第一步', '第二步', '第二步']
+	// color: options.color, //显示的背景颜色
+	// fontColor: options.fontColor, //显示的字体颜色
+	// selectedColor: options.selectedColor,//焦点显示的背景颜色
+	// selectedFontColor: options.selectedFontColor,//焦点显示的字体颜色
+	// current: options.current, //第几个被选中
 
 	var stepbar = {
 		options:[{}],
