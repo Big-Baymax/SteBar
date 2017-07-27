@@ -12,8 +12,8 @@
   demo
   <pre><code>
 var id = stepbar.init({
-          box: $("#newstepbar"),
-          items: ['第一步', '第二步', '第二步', '第二步', '第二步'],
+          box: $("#newstepbar"),//指定容器
+          items: ['第一步', '第二步', '第二步', '第二步', '第二步'],
           stepbarid: "stepBar", //stepBar
           current: 1, //第几个被选中
 });
